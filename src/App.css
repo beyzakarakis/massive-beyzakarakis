@@ -1,38 +1,89 @@
-.App {
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pagination {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 14px;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 6px;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* CharacterGrid.css */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.character-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.character-name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.character-details {
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.app-container-with-sidebar {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.main-content {
+  flex: 1;
+  text-align: center;
 }
