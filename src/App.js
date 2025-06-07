@@ -77,7 +77,7 @@ if (filters.sort === 'asc') {
     <div className="app-container-with-sidebar">
       <FilterBar filters={filters} setFilters={setFilters} />
       <div className="main-content">
-  <h1>Rick and Morty Karakterleri</h1>
+        <img src="/b.png" alt="Rick and Morty Logo" className="app-logo" />
   {pagedData.length === 0 ? (
     <p style={{ marginTop: '2rem', fontSize: '18px', color: '#555' }}>
       Sonuç bulunamadı.

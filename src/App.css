@@ -2,10 +2,19 @@
 
 body {
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
+
+  background-image: url('./rickmorty.jpg'); /* public klasöründe olmalı */
+  background-repeat: no-repeat;
+  background-size: cover;            /* Ekrana tam sığacak şekilde ölçeklendirir */
+  background-position: center center;/* Ortalar */
+  background-attachment: fixed;      /* Scroll yapılsa bile sabit kalır */
+  min-height: 100vh;                 /* Sayfanın en az ekran yüksekliğinde olmasını sağlar */
+  width: 100%;
 }
+
+
 
 .app-container {
   max-width: 1000px;
@@ -18,6 +27,12 @@ h1 {
   color: #2c3e50;
 }
 
+.app-logo {
+  width: 250px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -27,15 +42,15 @@ h1 {
 
 button {
   padding: 8px 14px;
-  background-color: #2ecc71;
+  background-color: #1edfb9ec;
   border: none;
   border-radius: 6px;
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
 button:disabled {
-  background-color: #ccc;
+  background-color: #ccccccd8;
   cursor: not-allowed;
 }
 

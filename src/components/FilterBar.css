@@ -2,7 +2,7 @@
 
 .filter-bar {
   width: 240px; /* Biraz daha geniş yaptım */
-  background: white;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 1.5rem 1.8rem;
   border-radius: 12px;
   box-shadow: 0 0 12px #ccc;
@@ -47,7 +47,7 @@
 .reset-btn {
   margin-top: 1.8rem;
   width: 100%;
-  background-color: #e74c3c;
+  background-color: #1edfb9ec;
   border: none;
   padding: 10px 0;
   color: white;
@@ -58,5 +58,5 @@
 }
 
 .reset-btn:hover {
-  background-color: #c0392b;
+  background-color: #000000;
 }
