@@ -23,7 +23,7 @@ const CharacterTable = ({ data, onSelect, selectedCharacterId }) => {
                 </td>
               </tr>
 
-              {/* Detay gösterimi sadece seçilen karakter için */}
+              
               {selectedCharacterId === char.id && (
                 <tr className="details-row">
                   <td colSpan={1}>
