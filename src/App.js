@@ -51,15 +51,14 @@ function App() {
       filtered = filtered.filter((c) => c.status === filters.status);
     }
 
-    // Sıralama
-    // Sıralama
-if (filters.sort === 'asc') {
-  filtered = filtered.sort((a, b) => a.name.localeCompare(b.name));
-} else if (filters.sort === 'desc') {
-  filtered = filtered.sort((a, b) => b.name.localeCompare(a.name));
-} else if (filters.sort === 'random') {
-  filtered = filtered.sort(() => Math.random() - 0.5);
-}
+
+    if (filters.sort === 'asc') {
+      filtered = filtered.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (filters.sort === 'desc') {
+      filtered = filtered.sort((a, b) => b.name.localeCompare(a.name));
+    } else if (filters.sort === 'random') {
+      filtered = filtered.sort(() => Math.random() - 0.5);
+    }
 
     filtered = filtered.sort((a, b) =>
       filters.sort === 'asc'
@@ -68,7 +67,7 @@ if (filters.sort === 'asc') {
     );
 
     setFilteredChars(filtered);
-    setCurrentPage(1); // filtre değişince sayfa 1'e dönsün
+    setCurrentPage(1); // filtre değişince sayfa 1'e dönsmesi için
   }, [characters, filters]);
 
   const pagedData = filteredChars.slice((currentPage - 1) * perPage, currentPage * perPage);
