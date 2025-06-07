@@ -1,19 +1,15 @@
-/* App.css */
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-
-  background-image: url('./rickmorty.jpg'); /* public klasöründe olmalı */
+  background-image: url('./rickmorty.jpg'); /* public klasöründen çekilmediği için slashın önüne nokta koyup src'den çektim */
   background-repeat: no-repeat;
-  background-size: cover;            /* Ekrana tam sığacak şekilde ölçeklendirir */
-  background-position: center center;/* Ortalar */
-  background-attachment: fixed;      /* Scroll yapılsa bile sabit kalır */
-  min-height: 100vh;                 /* Sayfanın en az ekran yüksekliğinde olmasını sağlar */
+  background-size: cover;           
+  background-position: center center;
+  background-attachment: fixed;      
+  min-height: 100vh;                
   width: 100%;
 }
-
 
 
 .app-container {
